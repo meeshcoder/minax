@@ -1,0 +1,44 @@
+/*===========================
+    11. Footer css 
+===========================*/
+
+.minax_footer{
+	padding: 60px 0 58px;
+	& .footer_content{
+		& .footer_logo{
+			margin-bottom: 40px;
+		}
+		& .footer_social{
+			margin-bottom: 35px;
+			& ul{
+				& li{
+					display: inline-block;
+					margin-left: 10px;
+					margin-right: 10px;
+					& a{
+						display: block;
+						width: 50px;
+						height: 50px;
+						line-height: 50px;
+						text-align: center;
+						color: $white;
+						font-size: 16px;
+						background-color: $theme_color;
+						@media #{$xs}{
+							width: 40px;
+							height: 40px;
+							line-height: 40px;
+							margin-bottom: 15px;
+						}
+
+					}
+				}
+			}
+		}
+		& .copyright_text{
+			& p{
+				color: $white;
+			}
+		}
+	}
+}

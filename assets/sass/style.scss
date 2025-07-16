@@ -1,0 +1,41 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Minax - Personal Portfolio HTML Template
+    Template URI: https://templatecafe.net/theme/html/minax
+    Description: Minax - Personal Portfolio HTML Template is a clean, creative, unique template for Personal Portfolio websites. It was nice, clean and user-friendly design. the template is based on 1170 Bootstrap based design so this Template will be 100% fluid responsive. Anyone can use this template to showcase his personal portfolio works so If you are wondering to build your personal website, this template might help you. Everything is in the Documentation file so that you can change anything easily.
+    Author: Mizanur Rahman
+    Author URI: https://themeforest.net/user/mizan_web
+    Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+/*
+---------------------------
+		CSS Index
+---------------------------
+1. Common css
+2. Header css
+3. Banner css
+4. About css
+5. Service css
+6. Portfolio css
+7. why_choose css
+8. Testimonial css
+9. Blog css
+10. Contact css
+11. Footer css 
+*/
+
+
+@import 'variables';
+@import 'mixin';
+@import 'common';
+@import 'header';
+@import 'banner';
+@import 'about';
+@import 'service';
+@import 'portfolio';
+@import 'why_choose';
+@import 'testimonial';
+@import 'blog';
+@import 'contact';
+@import 'footer';

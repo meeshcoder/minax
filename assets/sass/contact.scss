@@ -1,0 +1,44 @@
+/*===========================
+    10. Contact css 
+===========================*/
+.minax_contact{
+	& .section_title{
+		margin-top: -8px;
+	}
+	& .minax_contact_form{
+		& p.form-message{
+			margin-bottom: 20px;
+		}
+		& p.success{
+		  	color: #fff;
+		  	background: #6BCA07;
+		  	padding: 10px 20px;
+		  	border-radius: 4px;
+		}
+		& p.error{
+		  	color: #fff;
+		  	background: #f12a00;
+		  	padding: 10px 20px;
+		  	border-radius: 4px;
+		}
+		& .form_group{
+			margin-bottom: 30px;
+			& .form_control{
+				padding: 20px;
+				width: 100%;
+				background-color: $blue_bg;
+				color: $white;
+				height: 50px;
+			}
+			& textarea.form_control{
+				padding: 12px 20px;
+				height: 200px;
+			}
+		}
+		& .button{
+			& .minax_btn{
+				background-color: transparent;
+			}
+		}
+	}
+}

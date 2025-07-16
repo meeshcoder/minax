@@ -1,0 +1,152 @@
+/*===========================
+    4. about css 
+===========================*/
+
+.minax_about{
+	& .minax_img_box{
+		@media #{$xs}{
+			margin-bottom: 60px;
+		}
+		& .about_img_1{
+			@media #{$md}{
+				& img{
+					width: 100%;
+				}
+			}
+			@media #{$xs}{
+				& img{
+					width: 100%;
+				}
+			}
+		}
+		& .about_img_2{
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+			width: 80%;
+			margin: 0 auto;
+			margin-top: -190px;
+			@media #{$md}{
+				& img{
+					width: 100%;
+				}
+			}
+			@media #{$xs}{
+				& img{
+					width: 100%;
+				}
+			}
+			& .play_button{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -40px;
+				margin-left: -40px;
+				& .play_btn{
+					display: block;
+					background-color: $theme_color;
+					width: 80px;
+					height: 80px;
+					line-height: 80px;
+					color: $white;
+					text-align: center;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+	& .minax_content_box{
+		& .content_title{
+			margin-bottom: 45px;
+			& span{
+				display: block;
+				text-transform: uppercase;
+				font-weight: bold;
+				letter-spacing: 2px;
+				color: $theme_color;
+			}
+			& h2{
+				color: $white;
+			}
+		}
+		& .about_content{
+			margin-bottom: 35px;
+			& p{
+				color: $white;
+			}
+		}
+		& .about_information{
+			& .single_info{
+				display: flex;
+				align-items: center;
+				margin-bottom: 30px;
+				& .info_icon{
+					i{
+						display: block;
+						width: 70px;
+						height: 70px;
+						line-height: 70px;
+						text-align: center;
+						color: $white;
+						background-color: $theme_color;
+						font-size: 24px;
+						@media #{$lg}{
+							width: 50px;
+							height: 50px;
+							line-height: 50px;
+						}
+						@media #{$xs}{
+							width: 50px;
+							height: 50px;
+							line-height: 50px;
+						}
+					}
+				}
+				& .info_text{
+					margin-left: 30px;
+					@media #{$lg}{
+						margin-left: 15px;
+					}
+					@media #{$xs}{
+						margin-left: 15px;
+					}
+					span{
+						display: block;
+						color: $white;
+						margin-bottom: 10px;
+					}
+					h5{
+						color: $white;
+						@media #{$lg}{
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+		& .about_skill_area{
+			& .single_bar{
+				margin-bottom: 20px;
+				& .progress_title{
+					margin-bottom: 10px;
+					& h5{
+						letter-spacing: 2px;
+						color: $white;
+						font-weight: 600;
+						text-transform: uppercase;
+						& span{
+							float: right;
+						}
+					}
+				}
+				& .progress{
+					border-radius: 0;
+					height: 10px;
+					& .progress-bar{
+						background-color: $theme_color;
+					}
+				}
+			}
+		}
+	}
+}

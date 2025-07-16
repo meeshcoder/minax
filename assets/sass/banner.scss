@@ -1,0 +1,24 @@
+/*===========================
+    3. Banner css 
+===========================*/
+.banner_area{
+	position: relative;
+	padding: 286px 0 172px;
+	& .banner_content{
+		& span{
+			display: block;
+			color: $white;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			font-size: 24px;
+		}
+		& h1{
+			color: $white;
+			margin-bottom: 40px;
+			@media #{$xs}{
+				font-size: 36px;
+			}
+		}
+	}
+}

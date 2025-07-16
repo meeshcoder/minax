@@ -1,0 +1,65 @@
+/*===========================
+    9. Blog css 
+===========================*/
+
+
+.minax_blog{
+	& .section_title{
+		margin-top: -8px;
+	}
+	& .blog_box{
+		@media #{$md}{
+			margin-bottom: 60px;
+		}
+		@media #{$xs}{
+			margin-bottom: 60px;
+		}
+		& .blog_info{
+			padding: 20px 20px 23px;
+			border: 1px solid $theme_color;
+			border-top: none;
+			.post_info{
+				& h4{
+					color: $white;
+					line-height: 34px;
+					margin-bottom: 15px;
+					@media #{$lg}{
+						font-size: 18px;
+						line-height: 30px;
+					}
+					& > a{
+						color: $white;
+						@include transition(.5s);
+						&:hover,
+						&:focus{
+							color: $theme_color;
+						}
+					}
+				}
+				& p{
+					color: $white;
+					margin-bottom: 20px;
+				}
+				& a.btn_link{
+					position: relative;
+					text-transform: capitalize;
+					color: $theme_color;
+					&:hover:before,
+					&:focus:before{
+						width: 50px;
+					}
+					&:before{
+						content: '';
+						width: 20px;
+						height: 2px;
+						display: inline-block;
+						margin-bottom: 4px;
+						margin-right: 10px;
+						background-color: $theme_color;
+						@include transition(.5s);
+					}
+				}
+			}
+		}
+	}
+}
