@@ -5,12 +5,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the form fields and remove whitespace.
     $name = strip_tags(trim($_POST["name"]));
     $name = str_replace(array("\r", "\n"), array(" ", " "), $name);
-    $subject = strip_tags(trim($_POST["subject"] ?? ''));
     $message = strip_tags(trim($_POST["message"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
 
     // Check that all required data was sent to the mailer.
-    if (empty($name) || empty($email) || empty($subject) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Set a 400 (bad request) response code and return JSON response.
         http_response_code(400);
         echo json_encode(["status" => "error", "message" => "Please complete the form and try again."]);
@@ -25,8 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Build the email content.
     $email_content = "Name: $name\n";
-    $email_content .= "Email: $email\n";
-    $email_content .= "Subject: $subject\n\n";
+    $email_content .= "Email: $email\n\n";
     $email_content .= "Message:\n$message\n";
 
     // Build the email headers.
